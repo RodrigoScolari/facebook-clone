@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>FacebookClone</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <h1>Projeto de clonar páginas</h1>
+    <div class="container">
+        <div class="intro">
+            <img class="facelogo" src="./src/img/facelogo.svg" alt="Facebook">
+            <h2 class="fraseface">Apenas um clone do facebook para treinar conceitos de html e css,
+                não salvara suas credenciais. O clone é somente visual!</h2>
+        </div>
+
+        <div>
+            <form>
+                <input type="text" placeholder="Email ou Telefone">
+                <input type="password" placeholder="Senha">
+                <button class="entrar">Entrar</button>
+                <a href="#">Esqueceu a senha?</a>
+                <button class="criarc">Criar nova conta</button>
+            </form>
+
+            <p> <a href="#">Criar uma Página</a> para uma celebridade,
+                uma marca ou uma empresa.</p>
+        </div>
+
+    </div>
+
+    <footer>Apenas um cópia do facebook ©<span id="year"></span></footer>
+    <script>
+        const year = document.getElementById('year');
+        const actualYear = new Date();
+
+        year.innerHTML = actualYear.getFullYear();
+
+    </script>
+
+</body>
+
+</html>
